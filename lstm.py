@@ -27,19 +27,19 @@ curr_path = os.getcwd()
 
 
 #load data 
-sonnets = open(curr_path + "/haikuzou.txt")
+poems = open(curr_path + "/haikuzou.txt")
 
 #read first 5 lines 
 for i in range(0,5): 
-    print(sonnets.readline())
+    print(poems.readline())
 
 
 # In[ ]:
 
 
 lines = []
-with open(curr_path + "/haikuzou.txt") as sonnets:
-    content = sonnets.readlines() 
+with open(curr_path + "/haikuzou.txt") as poems:
+    content = poems.readlines() 
     for line in content:
         lines.append(line)
 
