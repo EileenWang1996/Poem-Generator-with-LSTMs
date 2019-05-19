@@ -9,14 +9,14 @@ LSTM networks are a special kind of recurrent neural network (RNN) which is capa
   <img src="https://user-images.githubusercontent.com/35329219/57978201-a754d000-7a4b-11e9-99df-3b9d203c548b.JPG">
 </p>
 
-Whilst LSTMs also form a chain of repeating modules, unlike RNNs, each module contains four network layers interacting in a special way:
+Whilst LSTMs also form a chain of repeating modules, unlike RNNs, each module contains four network layers interacting in a special way as shown below:
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/35329219/57978207-c05d8100-7a4b-11e9-9261-19c4f60ae6e7.JPG">
 </p>
 
-Each LSTM unit contains 4 important components - the cell state, forget gate, input gate and output gate. 
-- Cell State: serves as the long-term memory of the network. Unlike hidden states which stores information of the overall state from what the network has so far, cell states only store SELECTIVE memory of the past. 
+The 4 important components of an LSTM unit are the cell state, forget gate, input gate and output gate. 
+- Cell State: serves as the long-term memory of the network. Unlike hidden states which stores information of the overall state from what the network has seen so far, cell states only store SELECTIVE memory of the past. 
 - Forget Gate: takes the previous hidden state and decides what must be removed from the previous timestep. This gate aims to remove any irrelevant information. 
 - Input Gate: this gate processes the new input from the current timestep and decides which parts of this information is actually worth saving.
 - Output Gate: this gate basically decides what the next hidden state should be. It's main function is to learn to only focus the model's long-term memory into information that will be immediately useful. 
