@@ -19,8 +19,6 @@ from keras.callbacks import ModelCheckpoint
 
 
 curr_path = os.getcwd()
-print(curr_path)
-print(os.listdir())
 
 
 # ## Data Preparation
@@ -169,8 +167,6 @@ for j in range(0, len(sequence)):
     poem.append(char) #map back numbers to characters 
     
 for i in range(0, 1000): #get the next 1000 characters 
-    if i % 10 == 0: 
-      
     x = np.reshape(sequence, (1, len(sequence), 1))
     #normalise the sequence
     x = x/float(len(unique_chars))
